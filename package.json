@@ -1,0 +1,23 @@
+{
+  "name": "spotitube",
+  "version": "1.0.0",
+  "description": "Convert Spotify Tracks to YouTube Music Links",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node --env-file=.env dst/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "@types/spotify-web-api-node": "^5.0.11",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "spotify-web-api-node": "^5.0.2",
+    "ytmusic-api": "^5.3.0"
+  }
+}

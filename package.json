@@ -1,11 +1,12 @@
 {
   "name": "tubeify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Convert Spotify Tracks to YouTube Music Links",
   "main": "dst/index.js",
   "types": "dst/index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
     "start": "npm run build && node --env-file=.env dst/index.js"
   },
   "files": [
